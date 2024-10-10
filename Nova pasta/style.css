@@ -1,60 +1,141 @@
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif
-
-}
-html{
-   height: 500vh;
-
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
+html, body {
+    height: 100%; /* Garantir que o corpo ocupe toda a altura */
+}
+
+.container {
     max-width: 1280px;
     margin: auto;
-
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-header{
-    height: 100%;
-    padding: 60px 4%;
-
+.banner {
+    height: 100vh; /* Banner ocupa toda a altura da tela */
+    background-image: url("file:///C:/Users/Wagner/Desktop/Nova%20pasta/banner2.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para permitir posicionamento absoluto da navbar */
+    flex-direction: column; /* Alinha os filhos em coluna */
+    text-align: center; /* Centraliza o texto */
 }
 
-header i{
+header {
+   width: 100%;
+   padding: 60px 4%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: darkgray;
+}
+
+header i {
     font-size: 30px;
     color: white;
-
 }
 
-header ul{
+header nav {
+    flex: 1; /* Faz o nav ocupar o espaço disponível */
+    text-align: center; /* Centraliza o conteúdo do nav */
+}
+
+header ul {
+    display: inline-flex; /* Usa inline-flex para manter os itens em linha */
     list-style-type: none;
+    padding: 0; /* Remove padding padrão */
 }
 
-header ul li{
-    display: inline-block;
-    margin: 0 40px;
+header ul li {
+    margin: 0 50px; /* Aumenta o espaçamento entre os itens */
 }
 
-header ul li a{
+header ul li a {
     color: white;
     text-decoration: none;
-
+    transition: color 0.3s; /* Transição suave */
 }
 
-.banner{
-    height: 100hv;
-    background-image:src="C:\Users\Wagner\Desktop\Nova%pasta\banner.jpg"
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}  
+header ul li a:hover {
+    color: #ddd; /* Cor ao passar o mouse */
+}
+
+h1 {
+    margin-bottom: 10px; /* Espaçamento abaixo do h1 */
+    font-size: 3em; /* Tamanho do h1 */
+}
+
+.highlight {
+    color: darkorange; /* Cor para "TREINAR" */
+}
+
+.highlight-2 {
+    color: rgb(0, 0, 0); /* Cor para "CONOSCO" */
+}
+
+h2 {
+    color: white; /* Cor do h2 */
+}
+
+.content {
+    padding: 40px 20px; /* Adiciona espaçamento em volta do conteúdo */
+    background-color: #f4f4f4; /* Cor de fundo opcional */
+    text-align: center; /* Centraliza o texto */
+}
+
+.content h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.content p, .content ul {
+    max-width: 800px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto */
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: none; /* Remove a borda */
+    background-color: darkgray;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex; /* Permite usar flexbox para centralizar */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-weight: 500; /* Deixa a fonte um pouco mais ousada */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+.btn-contato button:hover {
+    background-color: gray; /* Altera a cor ao passar o mouse */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai */
+    cursor: default; /* Altera o cursor para padrão (opcional) */
+}
