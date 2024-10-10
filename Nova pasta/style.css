@@ -21,7 +21,7 @@ html, body {
 }
 
 .banner {
-    height: 100vh; /* Banner ocupa toda a altura da tela */
+    height: 100vh; 
     background-image: url("file:///C:/Users/Wagner/Desktop/Nova%20pasta/banner2.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
@@ -29,9 +29,9 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Para permitir posicionamento absoluto da navbar */
-    flex-direction: column; /* Alinha os filhos em coluna */
-    text-align: center; /* Centraliza o texto */
+    position: relative; 
+    flex-direction: column; 
+    text-align: center; /
 }
 
 header {
@@ -58,84 +58,84 @@ header i {
 }
 
 header nav {
-    flex: 1; /* Faz o nav ocupar o espaço disponível */
-    text-align: center; /* Centraliza o conteúdo do nav */
+    flex: 1; 
+    text-align: center; 
 }
 
 header ul {
-    display: inline-flex; /* Usa inline-flex para manter os itens em linha */
+    display: inline-flex; 
     list-style-type: none;
-    padding: 0; /* Remove padding padrão */
+    padding: 0; 
 }
 
 header ul li {
-    margin: 0 50px; /* Aumenta o espaçamento entre os itens */
+    margin: 0 50px; 
 }
 
 header ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s; /* Transição suave */
+    transition: color 0.3s; 
 }
 
 header ul li a:hover {
-    color: #ddd; /* Cor ao passar o mouse */
+    color: #ddd; 
 }
 
 h1 {
-    margin-bottom: 10px; /* Espaçamento abaixo do h1 */
-    font-size: 3em; /* Tamanho do h1 */
+    margin-bottom: 10px; 
+    font-size: 3em; 
 }
 
 .highlight {
-    color: darkorange; /* Cor para "TREINAR" */
+    color: darkorange; /* Cor "TREINAR" */
 }
 
 .highlight-2 {
-    color: rgb(0, 0, 0); /* Cor para "CONOSCO" */
+    color: rgb(0, 0, 0); /* Cor "CONOSCO" */
 }
 
 h2 {
-    color: white; /* Cor do h2 */
+    color: white; /* Cor h2 */
 }
 
 .content {
-    padding: 40px 20px; /* Adiciona espaçamento em volta do conteúdo */
-    background-color: #f4f4f4; /* Cor de fundo opcional */
-    text-align: center; /* Centraliza o texto */
+    padding: 40px 20px; 
+    background-color: #f4f4f4; 
+    text-align: center; 
 }
 
 .content h2 {
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px; 
 }
 
 .content p, .content ul {
-    max-width: 800px; /* Limita a largura do texto */
-    margin: 0 auto; /* Centraliza o texto */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .btn-contato button {
     width: 120px;
     height: 40px;
-    border: none; /* Remove a borda */
+    border: none; 
     background-color: darkgray;
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
-    display: flex; /* Permite usar flexbox para centralizar */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    font-size: 16px; /* Aumenta o tamanho da fonte */
-    font-weight: 500; /* Deixa a fonte um pouco mais ousada */
-    border-radius: 5px; /* Adiciona cantos arredondados */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 16px; 
+    font-weight: 500; 
+    border-radius: 5px; 
 }
 
 .btn-contato button:hover {
-    background-color: gray; /* Altera a cor ao passar o mouse */
+    background-color: gray; 
 }
 
 a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Herda a cor do elemento pai */
-    cursor: default; /* Altera o cursor para padrão (opcional) */
+    text-decoration: none; 
+    color: inherit; 
+    cursor: default; 
 }
